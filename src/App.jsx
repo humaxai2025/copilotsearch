@@ -256,24 +256,28 @@ function App() {
                     <button
                       className={viewPreference === 'expanded' ? 'active' : ''}
                       onClick={() => setViewPreference('expanded')}
-                      title="Expanded view"
+                      title="Expanded view - Show full details"
+                      aria-label="Expanded view"
                     >
-                      <svg width="16" height="16" viewBox="0 0 16 16">
-                        <rect x="2" y="2" width="12" height="3" fill="currentColor"/>
-                        <rect x="2" y="7" width="12" height="3" fill="currentColor"/>
-                        <rect x="2" y="12" width="12" height="3" fill="currentColor"/>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <rect x="2" y="2" width="16" height="4" rx="1" fill="currentColor" opacity="0.9"/>
+                        <rect x="2" y="8" width="16" height="4" rx="1" fill="currentColor" opacity="0.9"/>
+                        <rect x="2" y="14" width="16" height="4" rx="1" fill="currentColor" opacity="0.9"/>
                       </svg>
+                      <span className="view-label">Expanded</span>
                     </button>
                     <button
                       className={viewPreference === 'compact' ? 'active' : ''}
                       onClick={() => setViewPreference('compact')}
-                      title="Compact view"
+                      title="Compact view - Show condensed list"
+                      aria-label="Compact view"
                     >
-                      <svg width="16" height="16" viewBox="0 0 16 16">
-                        <rect x="2" y="3" width="12" height="2" fill="currentColor"/>
-                        <rect x="2" y="7" width="12" height="2" fill="currentColor"/>
-                        <rect x="2" y="11" width="12" height="2" fill="currentColor"/>
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <rect x="2" y="4" width="16" height="1.5" rx="0.75" fill="currentColor" opacity="0.8"/>
+                        <rect x="2" y="9" width="16" height="1.5" rx="0.75" fill="currentColor" opacity="0.8"/>
+                        <rect x="2" y="14" width="16" height="1.5" rx="0.75" fill="currentColor" opacity="0.8"/>
                       </svg>
+                      <span className="view-label">Compact</span>
                     </button>
                   </div>
 
