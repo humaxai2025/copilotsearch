@@ -429,9 +429,16 @@
   font-size: 3rem;
   font-weight: 700;
   color: var(--color-text-primary);
-  margin: 40px 0 16px;
+  margin: 40px 0 8px;
   letter-spacing: -0.5px;
   line-height: 1.2;
+}
+
+.subtitle-info {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin: 0 0 16px;
+  font-weight: 500;
 }
 
 .app-subtitle {

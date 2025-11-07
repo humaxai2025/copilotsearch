@@ -35,9 +35,12 @@ function App() {
 
   // Load use cases data
   useEffect(() => {
-    fetch('/copilotusecases.json')
+    // Add cache busting timestamp to ensure fresh data
+    const timestamp = new Date().getTime()
+    fetch(`/copilotusecases.json?v=${timestamp}`)
       .then(response => response.json())
       .then(data => {
+        console.log('✓ Loaded use cases:', data.usecases?.length || 0)
         setUseCases(data.usecases || [])
         setIsLoading(false)
       })
@@ -79,6 +82,7 @@ function App() {
     setTimeout(() => {
       // Perform search
       const results = performSearch(useCases, searchQuery, filters, sortBy)
+      console.log(`🔍 Search for "${searchQuery}":`, results.length, 'results')
       setSearchResults(results)
       setIsSearching(false)
 
@@ -337,7 +341,10 @@ function App() {
             {/* Search Header */}
             <div className="search-header">
               {!hasResults && (
-                <h1 className="app-title">Can I Use GitHub Copilot for?</h1>
+                <>
+                  <h1 className="app-title">Can I Use GitHub Copilot for?</h1>
+                  <p className="subtitle-info">{useCases.length} use cases available</p>
+                </>
               )}
 
               <SearchBar

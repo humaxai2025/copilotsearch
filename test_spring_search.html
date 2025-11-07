@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Search Test</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        .search-box {
+            margin: 20px 0;
+            padding: 12px;
+            font-size: 16px;
+            width: 100%;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .result-item {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f9f9f9;
+            border-left: 4px solid #0969da;
+            border-radius: 4px;
+        }
+        .result-title {
+            font-weight: 600;
+            color: #0969da;
+            margin-bottom: 5px;
+        }
+        .result-meta {
+            font-size: 14px;
+            color: #666;
+        }
+        .stats {
+            padding: 15px;
+            background: #e3f2fd;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔍 Spring Search Test</h1>
+        <p>Testing if Spring Boot use cases are searchable</p>
+
+        <input type="text"
+               class="search-box"
+               id="searchInput"
+               placeholder="Type 'spring' to search..."
+               value="spring">
+
+        <div class="stats" id="stats">
+            <strong>Loading data...</strong>
+        </div>
+
+        <div class="results" id="results"></div>
+    </div>
+
+    <script>
+        let useCases = [];
+
+        // Load data
+        fetch('/copilotusecases.json?v=' + Date.now())
+            .then(res => res.json())
+            .then(data => {
+                useCases = data.usecases || [];
+                document.getElementById('stats').innerHTML =
+                    `<strong>✓ Loaded ${useCases.length} use cases</strong>`;
+                performSearch('spring');
+            })
+            .catch(err => {
+                document.getElementById('stats').innerHTML =
+                    `<strong>❌ Error: ${err.message}</strong>`;
+            });
+
+        // Search function (same logic as app)
+        function performSearch(query) {
+            const lowerQuery = query.toLowerCase();
+
+            const results = useCases.map(useCase => {
+                let score = 0;
+
+                // Title match
+                if (useCase.title && useCase.title.toLowerCase().includes(lowerQuery)) {
+                    score += 100;
+                }
+
+                // Category match
+                if (useCase.category && useCase.category.toLowerCase().includes(lowerQuery)) {
+                    score += 50;
+                }
+
+                // Description match
+                if (useCase.description && useCase.description.toLowerCase().includes(lowerQuery)) {
+                    score += 30;
+                }
+
+                // Tags match
+                if (useCase.tags && Array.isArray(useCase.tags)) {
+                    const tagMatches = useCase.tags.filter(tag =>
+                        tag.toLowerCase().includes(lowerQuery)
+                    ).length;
+                    score += tagMatches * 20;
+                }
+
+                return { ...useCase, score };
+            }).filter(uc => uc.score > 0)
+              .sort((a, b) => b.score - a.score);
+
+            displayResults(results, query);
+        }
+
+        function displayResults(results, query) {
+            const resultsDiv = document.getElementById('results');
+
+            if (results.length === 0) {
+                resultsDiv.innerHTML = '<p>No results found</p>';
+                return;
+            }
+
+            const html = `
+                <h2>Found ${results.length} results for "${query}"</h2>
+                ${results.slice(0, 10).map(r => `
+                    <div class="result-item">
+                        <div class="result-title">${r.title}</div>
+                        <div class="result-meta">
+                            Category: ${r.category} ${r.subcategory ? '/ ' + r.subcategory : ''}
+                            | Score: ${r.score}
+                            | Tags: ${r.tags ? r.tags.slice(0, 5).join(', ') : 'none'}
+                        </div>
+                    </div>
+                `).join('')}
+                ${results.length > 10 ? `<p><em>...and ${results.length - 10} more results</em></p>` : ''}
+            `;
+
+            resultsDiv.innerHTML = html;
+        }
+
+        // Live search
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            if (useCases.length > 0 && e.target.value.trim()) {
+                performSearch(e.target.value);
+            }
+        });
+    </script>
+</body>
+</html>
