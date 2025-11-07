@@ -7,7 +7,8 @@
       "Bash(python expand_usecases.py:*)",
       "Bash(python expand_usecases_batch2.py:*)",
       "Bash(python expand_usecases_batch3.py:*)",
-      "Bash(python add_spring_angular_usecases.py:*)"
+      "Bash(python add_spring_angular_usecases.py:*)",
+      "Bash(npm run dev:*)"
     ],
     "deny": [],
     "ask": []

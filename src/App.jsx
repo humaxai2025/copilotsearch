@@ -215,8 +215,17 @@ function App() {
 
       {/* Main Content */}
       <div className="app-content">
+        {/* Loading State */}
+        {isLoading && (
+          <div className="loading-container">
+            <div className="loading-spinner"></div>
+            <h2>Loading GitHub Copilot Use Cases...</h2>
+            <p>Please wait while we load {608} use cases</p>
+          </div>
+        )}
+
         {/* Search View */}
-        {currentView === 'search' && (
+        {!isLoading && currentView === 'search' && (
           <div className={`search-container ${hasResults ? 'has-results' : ''}`}>
             {/* Header with filters and controls */}
             {hasResults && (
@@ -411,7 +420,7 @@ function App() {
         )}
 
         {/* Favorites View */}
-        {currentView === 'favorites' && (
+        {!isLoading && currentView === 'favorites' && (
           <div className="favorites-container">
             <div className="favorites-header">
               <h1 className="page-title">
@@ -454,7 +463,7 @@ function App() {
         )}
 
         {/* Detail View */}
-        {currentView === 'detail' && selectedUseCase && (
+        {!isLoading && currentView === 'detail' && selectedUseCase && (
           <div className="detail-container">
             <button className="back-button" onClick={handleBackToSearch}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
