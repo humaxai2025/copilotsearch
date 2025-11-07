@@ -1,9 +1,22 @@
 import Fuse from 'fuse.js'
 
+// Simple in-memory cache for repeated identical searches within a session
+const _searchCache = new Map()
+
+export const clearSearchCache = () => {
+  _searchCache.clear()
+}
+
 // Intelligent search with scoring
 export const performSearch = (useCases, query, filters = {}, sortBy = 'relevance') => {
   if (!query.trim() && Object.keys(filters).length === 0) {
     return []
+  }
+
+  // Cache key
+  const cacheKey = JSON.stringify({ q: query, f: filters, s: sortBy })
+  if (_searchCache.has(cacheKey)) {
+    return _searchCache.get(cacheKey)
   }
 
   let results = [...useCases]
@@ -110,7 +123,17 @@ export const performSearch = (useCases, query, filters = {}, sortBy = 'relevance
   })
     .filter(useCase => useCase.score > 0)
 
-  return sortResults(results, sortBy, query)
+  const finalResults = sortResults(results, sortBy, query)
+  _searchCache.set(cacheKey, finalResults)
+  return finalResults
+}
+
+// Wrap performSearch return to cache its result
+export const _performSearchWithCache = (useCases, query, filters = {}, sortBy = 'relevance') => {
+  const results = performSearch(useCases, query, filters, sortBy)
+  const cacheKey = JSON.stringify({ q: query, f: filters, s: sortBy })
+  _searchCache.set(cacheKey, results)
+  return results
 }
 
 // Fuzzy search using Fuse.js

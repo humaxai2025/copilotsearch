@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect, forwardRef, useImperativeHandle } from 'react'
 import { generateSuggestions } from '../utils/searchUtils'
+import useDebounce from '../hooks/useDebounce'
 import './SearchBar.css'
 
 const SearchBar = forwardRef(({
@@ -10,7 +11,8 @@ const SearchBar = forwardRef(({
   large = false,
   showSuggestions = false,
   useCases = [],
-  onSuggestionSelect
+  onSuggestionSelect,
+  searchHistory = []
 }, ref) => {
   const [isFocused, setIsFocused] = useState(false)
   const [suggestions, setSuggestions] = useState([])
@@ -18,6 +20,11 @@ const SearchBar = forwardRef(({
   const [selectedSuggestionIndex, setSelectedSuggestionIndex] = useState(-1)
   const inputRef = useRef(null)
   const suggestionsRef = useRef(null)
+  const [inputValue, setInputValue] = useState(value || '')
+
+  const debouncedOnChange = useDebounce((v) => {
+    onChange(v)
+  }, 250)
 
   // Expose input methods via ref
   useImperativeHandle(ref, () => ({
@@ -45,16 +52,27 @@ const SearchBar = forwardRef(({
 
   // Generate autocomplete suggestions
   useEffect(() => {
-    if (showSuggestions && value && value.length >= 2 && useCases.length > 0) {
-      const newSuggestions = generateSuggestions(useCases, value)
-      setSuggestions(newSuggestions)
-      setShowSuggestionsDropdown(newSuggestions.length > 0 && isFocused)
+    const query = inputValue
+    if (showSuggestions && query && query.length >= 2 && useCases.length > 0) {
+      const newSuggestions = generateSuggestions(useCases, query)
+      // Include recent searches (top 5) first
+      const recent = (searchHistory || []).slice(0, 5).map(h => h.query).filter(Boolean)
+      const combined = Array.from(new Set([...recent, ...newSuggestions]))
+      setSuggestions(combined)
+      setShowSuggestionsDropdown(combined.length > 0 && isFocused)
     } else {
       setSuggestions([])
       setShowSuggestionsDropdown(false)
     }
     setSelectedSuggestionIndex(-1)
-  }, [value, useCases, showSuggestions, isFocused])
+  }, [inputValue, useCases, showSuggestions, isFocused, searchHistory])
+
+  // Keep local input value in sync when parent value changes
+  useEffect(() => {
+    if (value !== inputValue) {
+      setInputValue(value || '')
+    }
+  }, [value])
 
   // Handle clicks outside to close suggestions
   useEffect(() => {
@@ -76,7 +94,8 @@ const SearchBar = forwardRef(({
   }, [])
 
   const handleClear = () => {
-    onChange('')
+    setInputValue('')
+    debouncedOnChange('')
     setShowSuggestionsDropdown(false)
     setSelectedSuggestionIndex(-1)
     if (inputRef.current) {
@@ -86,7 +105,7 @@ const SearchBar = forwardRef(({
 
   const handleFocus = () => {
     setIsFocused(true)
-    if (showSuggestions && value && value.length >= 2 && suggestions.length > 0) {
+    if (showSuggestions && inputValue && inputValue.length >= 2 && suggestions.length > 0) {
       setShowSuggestionsDropdown(true)
     }
   }
@@ -182,8 +201,11 @@ const SearchBar = forwardRef(({
           ref={inputRef}
           type="text"
           className="search-input"
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
+          value={inputValue}
+          onChange={(e) => {
+            setInputValue(e.target.value)
+            debouncedOnChange(e.target.value)
+          }}
           onFocus={handleFocus}
           onBlur={handleBlur}
           onKeyDown={handleKeyDown}
@@ -202,7 +224,7 @@ const SearchBar = forwardRef(({
           spellCheck="false"
         />
 
-        {value && (
+        {inputValue && (
           <button
             className="clear-button"
             onClick={handleClear}

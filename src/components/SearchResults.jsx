@@ -14,6 +14,7 @@ function SearchResults({
   const [expandedId, setExpandedId] = useState(null)
   const [copiedPromptId, setCopiedPromptId] = useState(null)
   const [copyFeedback, setCopyFeedback] = useState({})
+  const [visibleCount, setVisibleCount] = useState(50)
   const { toggleFavorite, isFavorite } = useApp()
 
   const toggleExpand = (id) => {
@@ -77,7 +78,7 @@ function SearchResults({
       </div>
 
       <div className="results-list" role="list">
-        {results.map((result) => {
+        {results.slice(0, visibleCount).map((result) => {
           const relatedUseCases = getRelatedForUseCase(result)
           const isExpanded = expandedId === result.id
           const isFav = isFavorite(result.id)
@@ -221,6 +222,18 @@ function SearchResults({
 
                   {isExpanded && (
                     <div id={`prompts-${result.id}`} className="prompts-list">
+                      <div className="prompts-actions">
+                        <button
+                          className="copy-all-button"
+                          onClick={() => {
+                            const allText = (result.example_prompts || []).join('\n\n')
+                            copyToClipboard(allText)
+                          }}
+                          aria-label="Copy all prompts"
+                        >
+                          Copy all
+                        </button>
+                      </div>
                       {result.example_prompts.map((prompt, idx) => {
                         const promptId = `${result.id}-prompt-${idx}`
                         const isCopied = copiedPromptId === promptId
@@ -343,6 +356,13 @@ function SearchResults({
           )
         })}
       </div>
+      {results.length > visibleCount && (
+        <div className="load-more-container">
+          <button className="load-more-button" onClick={() => setVisibleCount(prev => prev + 50)}>
+            Load more ({results.length - visibleCount} more)
+          </button>
+        </div>
+      )}
     </div>
   )
 }

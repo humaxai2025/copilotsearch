@@ -5,13 +5,15 @@ import { ThemeProvider } from './context/ThemeContext'
 import { AppProvider } from './context/AppContext'
 import './index.css'
 import App from './App.jsx'
+import { Analytics } from '@vercel/analytics/react'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <ThemeProvider>
         <AppProvider>
-          <App />
+            <App />
+            <Analytics />
         </AppProvider>
       </ThemeProvider>
     </BrowserRouter>

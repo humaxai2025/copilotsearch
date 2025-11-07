@@ -2,8 +2,9 @@ import { useState, useEffect, useRef } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import { useTheme } from './context/ThemeContext'
 import { useApp } from './context/AppContext'
-import { performSearch } from './utils/searchUtils'
+import { performSearch, clearSearchCache, performFuzzySearch } from './utils/searchUtils'
 import { exportResults } from './utils/exportUtils'
+import { getSavedFilters, saveFilters } from './utils/localStorage'
 import useKeyboardShortcuts from './hooks/useKeyboardShortcuts'
 import './App.css'
 
@@ -17,7 +18,7 @@ import FilterPanel from './components/FilterPanel'
 function App() {
   const [searchParams, setSearchParams] = useSearchParams()
   const { theme } = useTheme()
-  const { favorites, addToSearchHistory, trackExport, viewPreference, setViewPreference } = useApp()
+  const { favorites, addToSearchHistory, trackExport, viewPreference, setViewPreference, searchHistory } = useApp()
 
   const [currentView, setCurrentView] = useState('search') // 'search', 'favorites', 'detail'
   const [selectedUseCase, setSelectedUseCase] = useState(null)
@@ -26,7 +27,7 @@ function App() {
   const [searchResults, setSearchResults] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [isSearching, setIsSearching] = useState(false)
-  const [filters, setFilters] = useState({})
+  const [filters, setFilters] = useState(() => getSavedFilters() || {})
   const [sortBy, setSortBy] = useState('relevance')
   const [showFilters, setShowFilters] = useState(false)
 
@@ -43,6 +44,8 @@ function App() {
       .then(data => {
         console.log('✓ Loaded use cases:', data.usecases?.length || 0)
         setUseCases(data.usecases || [])
+        // Clear any cached search results when data changes
+        clearSearchCache()
         setIsLoading(false)
       })
       .catch(error => {
@@ -102,6 +105,15 @@ function App() {
     }
   }, [searchQuery, useCases, filters, sortBy, currentView])
 
+  // Persist filters to localStorage when they change
+  useEffect(() => {
+    try {
+      saveFilters(filters)
+    } catch (e) {
+      // ignore
+    }
+  }, [filters])
+
   // Keyboard shortcuts
   useKeyboardShortcuts([
     {
@@ -149,6 +161,14 @@ function App() {
     const result = exportResults(dataToExport, format, searchQuery)
     trackExport(format, dataToExport.length)
     return result
+  }
+
+  const handleTryFuzzySearch = () => {
+    if (!searchQuery) return
+    setIsSearching(true)
+    const results = performFuzzySearch(useCases, searchQuery, filters)
+    setSearchResults(results)
+    setIsSearching(false)
   }
 
   const handleUseCaseClick = (useCase) => {
@@ -357,6 +377,8 @@ function App() {
                 large={!hasResults}
                 showSuggestions={true}
                 useCases={useCases}
+                searchHistory={searchHistory}
+                onSuggestionSelect={(s) => addToSearchHistory(s)}
               />
 
               {!hasQuery && !hasResults && (
