@@ -3,7 +3,11 @@
     "allow": [
       "Bash(npm run build:*)",
       "Bash(python -c:*)",
-      "Bash(python update_keywords.py:*)"
+      "Bash(python update_keywords.py:*)",
+      "Bash(python expand_usecases.py:*)",
+      "Bash(python expand_usecases_batch2.py:*)",
+      "Bash(python expand_usecases_batch3.py:*)",
+      "Bash(python add_spring_angular_usecases.py:*)"
     ],
     "deny": [],
     "ask": []
