@@ -24,6 +24,7 @@ function App() {
   const [useCases, setUseCases] = useState([])
   const [searchResults, setSearchResults] = useState([])
   const [isLoading, setIsLoading] = useState(true)
+  const [isSearching, setIsSearching] = useState(false)
   const [filters, setFilters] = useState({})
   const [sortBy, setSortBy] = useState('relevance')
   const [showFilters, setShowFilters] = useState(false)
@@ -58,8 +59,12 @@ function App() {
 
     if (!searchQuery.trim() && Object.keys(filters).length === 0) {
       setSearchResults([])
+      setIsSearching(false)
       return
     }
+
+    // Set searching state to prevent "No results" flash
+    setIsSearching(true)
 
     // Add to search history
     if (searchQuery.trim()) {
@@ -69,6 +74,7 @@ function App() {
     // Perform search
     const results = performSearch(useCases, searchQuery, filters, sortBy)
     setSearchResults(results)
+    setIsSearching(false)
 
     // Update URL
     if (searchQuery) {
@@ -364,7 +370,7 @@ function App() {
             )}
 
             {/* No Results */}
-            {hasQuery && !hasResults && !isLoading && (
+            {hasQuery && !hasResults && !isLoading && !isSearching && (
               <div className="no-results">
                 <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
                   <circle cx="60" cy="60" r="50" stroke="currentColor" strokeWidth="2" opacity="0.2"/>

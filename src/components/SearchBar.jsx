@@ -236,7 +236,10 @@ const SearchBar = forwardRef(({
               key={index}
               id={`suggestion-${index}`}
               className={`suggestion-item ${selectedSuggestionIndex === index ? 'selected' : ''}`}
-              onClick={() => handleSuggestionClick(suggestion)}
+              onMouseDown={(e) => {
+                e.preventDefault()
+                handleSuggestionClick(suggestion)
+              }}
               role="option"
               aria-selected={selectedSuggestionIndex === index}
               tabIndex={-1}
