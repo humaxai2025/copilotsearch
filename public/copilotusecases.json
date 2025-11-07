@@ -132,7 +132,12 @@
       ],
       "context_scope": "file",
       "prerequisites": [],
-      "languages": [],
+      "languages": [
+        "Python",
+        "JavaScript",
+        "Java",
+        "TypeScript"
+      ],
       "risk_level": "low",
       "verification": [],
       "metrics": {
@@ -152,7 +157,15 @@
       "tags": [
         "testing",
         "quality",
-        "assurance"
+        "assurance",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {
         "name": "Testing & Quality Assurance"
@@ -192,7 +205,12 @@
       ],
       "tags": [
         "documentation",
-        "comments"
+        "comments",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {
         "name": "Documentation & Comments"
@@ -295,7 +313,10 @@
       ],
       "context_scope": "file",
       "prerequisites": [],
-      "languages": [],
+      "languages": [
+        "SQL",
+        "Python"
+      ],
       "risk_level": "low",
       "verification": [],
       "metrics": {
@@ -314,7 +335,23 @@
       ],
       "tags": [
         "data",
-        "operations"
+        "operations",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {
         "name": "Data Operations"
@@ -335,7 +372,12 @@
       ],
       "context_scope": "file",
       "prerequisites": [],
-      "languages": [],
+      "languages": [
+        "YAML",
+        "Shell",
+        "Python",
+        "Go"
+      ],
       "risk_level": "low",
       "verification": [],
       "metrics": {
@@ -354,7 +396,21 @@
       ],
       "tags": [
         "devops",
-        "infrastructure"
+        "infrastructure",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {
         "name": "DevOps & Infrastructure"
@@ -394,7 +450,13 @@
       ],
       "tags": [
         "api",
-        "development"
+        "development",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {
         "name": "API Development"
@@ -415,7 +477,12 @@
       ],
       "context_scope": "file",
       "prerequisites": [],
-      "languages": [],
+      "languages": [
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ],
       "risk_level": "low",
       "verification": [],
       "metrics": {
@@ -434,7 +501,12 @@
       ],
       "tags": [
         "frontend",
-        "development"
+        "development",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {
         "name": "Frontend Development"
@@ -455,7 +527,15 @@
       ],
       "context_scope": "file",
       "prerequisites": [],
-      "languages": [],
+      "languages": [
+        "Python",
+        "Java",
+        "Go",
+        "Node.js",
+        "C#",
+        "PHP",
+        "Ruby"
+      ],
       "risk_level": "low",
       "verification": [],
       "metrics": {
@@ -474,7 +554,18 @@
       ],
       "tags": [
         "backend",
-        "development"
+        "development",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {
         "name": "Backend Development"
@@ -495,7 +586,13 @@
       ],
       "context_scope": "file",
       "prerequisites": [],
-      "languages": [],
+      "languages": [
+        "Kotlin",
+        "Swift",
+        "Flutter",
+        "React Native",
+        "Java"
+      ],
       "risk_level": "low",
       "verification": [],
       "metrics": {
@@ -514,7 +611,11 @@
       ],
       "tags": [
         "mobile",
-        "development"
+        "development",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {
         "name": "Mobile Development"
@@ -535,7 +636,10 @@
       ],
       "context_scope": "file",
       "prerequisites": [],
-      "languages": [],
+      "languages": [
+        "Python",
+        "R"
+      ],
       "risk_level": "low",
       "verification": [],
       "metrics": {
@@ -554,7 +658,13 @@
       ],
       "tags": [
         "machine",
-        "learning"
+        "learning",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow"
       ],
       "legacy": {
         "name": "Machine Learning & AI"
@@ -635,7 +745,14 @@
       ],
       "tags": [
         "security",
-        "compliance"
+        "compliance",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {
         "name": "Security & Compliance"
@@ -1342,7 +1459,14 @@
       ],
       "tags": [
         "security",
-        "autofix"
+        "autofix",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": null
     },
@@ -1362,7 +1486,11 @@
       ],
       "context_scope": "file",
       "prerequisites": [],
-      "languages": [],
+      "languages": [
+        "SQL",
+        "Python",
+        "R"
+      ],
       "risk_level": "medium",
       "verification": [
         "Show before/after runtime",
@@ -1387,7 +1515,27 @@
       "tags": [
         "pandas",
         "pytorch",
-        "eda"
+        "eda",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "numpy",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": null
     },
@@ -1407,7 +1555,12 @@
       ],
       "context_scope": "repo",
       "prerequisites": [],
-      "languages": [],
+      "languages": [
+        "YAML",
+        "Shell",
+        "Python",
+        "Go"
+      ],
       "risk_level": "medium",
       "verification": [
         "Link to incident ticket",
@@ -1430,7 +1583,21 @@
       ],
       "tags": [
         "incident",
-        "runbooks"
+        "runbooks",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": null
     },
@@ -1510,7 +1677,12 @@
       "references": [],
       "tags": [
         "docs",
-        "docstring"
+        "docstring",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -1554,7 +1726,14 @@
       "references": [],
       "tags": [
         "security",
-        "audit"
+        "audit",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -1607,7 +1786,17 @@
       "tags": [
         "frontend",
         "backend",
-        "fullstack"
+        "fullstack",
+        "react",
+        "vue",
+        "angular",
+        "node.js",
+        "express",
+        "django",
+        "spring",
+        "postgresql",
+        "mongodb",
+        "redis"
       ],
       "legacy": {}
     },
@@ -1654,7 +1843,23 @@
       "tags": [
         "data engineering",
         "SQL",
-        "pipeline"
+        "pipeline",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -1703,7 +1908,15 @@
       "tags": [
         "QA",
         "testing",
-        "bug-report"
+        "bug-report",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -1795,7 +2008,21 @@
       "references": [],
       "tags": [
         "DevOps",
-        "automation"
+        "automation",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -1838,7 +2065,12 @@
       "references": [],
       "tags": [
         "docs",
-        "writing"
+        "writing",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -1889,7 +2121,12 @@
         "module",
         "code",
         "generation",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -1940,7 +2177,12 @@
         "for",
         "service",
         "class",
-        "code"
+        "code",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -1991,7 +2233,17 @@
         "client",
         "from",
         "openapi",
-        "code"
+        "code",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "rest",
+        "graphql",
+        "grpc",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -2042,7 +2294,12 @@
         "loader",
         "with",
         "validation",
-        "code"
+        "code",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -2093,7 +2350,12 @@
         "model",
         "with",
         "serialization",
-        "code"
+        "code",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -2144,7 +2406,12 @@
         "executable",
         "code",
         "generation",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -2195,7 +2462,12 @@
         "into",
         "function",
         "implementation",
-        "code"
+        "code",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -2246,7 +2518,12 @@
         "toggle",
         "wrapper",
         "code",
-        "generation"
+        "generation",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -2296,7 +2573,18 @@
         "module",
         "code",
         "generation",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -2346,7 +2634,18 @@
         "for",
         "service",
         "class",
-        "code"
+        "code",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -2396,7 +2695,23 @@
         "client",
         "from",
         "openapi",
-        "code"
+        "code",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "rest",
+        "graphql",
+        "grpc",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -2446,7 +2761,18 @@
         "loader",
         "with",
         "validation",
-        "code"
+        "code",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -2496,7 +2822,18 @@
         "model",
         "with",
         "serialization",
-        "code"
+        "code",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -2546,7 +2883,18 @@
         "executable",
         "code",
         "generation",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -2596,7 +2944,18 @@
         "into",
         "function",
         "implementation",
-        "code"
+        "code",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -2646,7 +3005,18 @@
         "toggle",
         "wrapper",
         "code",
-        "generation"
+        "generation",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -2696,7 +3066,11 @@
         "module",
         "code",
         "generation",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -2746,7 +3120,12 @@
         "for",
         "service",
         "class",
-        "code"
+        "code",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -2796,7 +3175,17 @@
         "client",
         "from",
         "openapi",
-        "code"
+        "code",
+        "rest",
+        "graphql",
+        "grpc",
+        "swagger",
+        "postman",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -2846,7 +3235,12 @@
         "loader",
         "with",
         "validation",
-        "code"
+        "code",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -2896,7 +3290,12 @@
         "model",
         "with",
         "serialization",
-        "code"
+        "code",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -2946,7 +3345,11 @@
         "executable",
         "code",
         "generation",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -2996,7 +3399,12 @@
         "into",
         "function",
         "implementation",
-        "code"
+        "code",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -3046,7 +3454,12 @@
         "toggle",
         "wrapper",
         "code",
-        "generation"
+        "generation",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -3096,7 +3509,23 @@
         "module",
         "code",
         "generation",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -3146,7 +3575,23 @@
         "for",
         "service",
         "class",
-        "code"
+        "code",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -3196,7 +3641,28 @@
         "client",
         "from",
         "openapi",
-        "code"
+        "code",
+        "rest",
+        "graphql",
+        "grpc",
+        "swagger",
+        "postman",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -3246,7 +3712,23 @@
         "loader",
         "with",
         "validation",
-        "code"
+        "code",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -3296,7 +3778,23 @@
         "model",
         "with",
         "serialization",
-        "code"
+        "code",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -3346,7 +3844,23 @@
         "executable",
         "code",
         "generation",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -3396,7 +3910,23 @@
         "into",
         "function",
         "implementation",
-        "code"
+        "code",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -3446,7 +3976,23 @@
         "toggle",
         "wrapper",
         "code",
-        "generation"
+        "generation",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -3468,7 +4014,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -3495,7 +4042,13 @@
         "module",
         "code",
         "generation",
-        "engineer"
+        "engineer",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow"
       ],
       "legacy": {}
     },
@@ -3517,7 +4070,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -3544,7 +4098,13 @@
         "for",
         "service",
         "class",
-        "code"
+        "code",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow"
       ],
       "legacy": {}
     },
@@ -3566,7 +4126,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -3593,7 +4154,18 @@
         "client",
         "from",
         "openapi",
-        "code"
+        "code",
+        "rest",
+        "graphql",
+        "grpc",
+        "swagger",
+        "postman",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow"
       ],
       "legacy": {}
     },
@@ -3615,7 +4187,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -3642,7 +4215,13 @@
         "loader",
         "with",
         "validation",
-        "code"
+        "code",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow"
       ],
       "legacy": {}
     },
@@ -3664,7 +4243,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -3691,7 +4271,13 @@
         "model",
         "with",
         "serialization",
-        "code"
+        "code",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow"
       ],
       "legacy": {}
     },
@@ -3713,7 +4299,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -3740,7 +4327,13 @@
         "executable",
         "code",
         "generation",
-        "engineer"
+        "engineer",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow"
       ],
       "legacy": {}
     },
@@ -3762,7 +4355,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -3789,7 +4383,13 @@
         "into",
         "function",
         "implementation",
-        "code"
+        "code",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow"
       ],
       "legacy": {}
     },
@@ -3811,7 +4411,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -3838,7 +4439,13 @@
         "toggle",
         "wrapper",
         "code",
-        "generation"
+        "generation",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow"
       ],
       "legacy": {}
     },
@@ -3891,7 +4498,20 @@
         "tests",
         "testing",
         "frontend",
-        "developer"
+        "developer",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -3944,7 +4564,20 @@
         "tests",
         "testing",
         "frontend",
-        "developer"
+        "developer",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -3997,7 +4630,20 @@
         "tests",
         "testing",
         "frontend",
-        "developer"
+        "developer",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4050,7 +4696,20 @@
         "based",
         "tests",
         "testing",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4103,7 +4762,20 @@
         "and",
         "stubs",
         "testing",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4156,7 +4828,20 @@
         "and",
         "synthetic",
         "data",
-        "testing"
+        "testing",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4209,7 +4894,20 @@
         "report",
         "into",
         "failing",
-        "test"
+        "test",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4262,7 +4960,20 @@
         "test",
         "cases",
         "testing",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4315,7 +5026,20 @@
         "tests",
         "testing",
         "frontend",
-        "developer"
+        "developer",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4367,7 +5091,26 @@
         "tests",
         "testing",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4419,7 +5162,26 @@
         "tests",
         "testing",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4471,7 +5233,26 @@
         "tests",
         "testing",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4523,7 +5304,26 @@
         "based",
         "tests",
         "testing",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4575,7 +5375,26 @@
         "and",
         "stubs",
         "testing",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4627,7 +5446,26 @@
         "and",
         "synthetic",
         "data",
-        "testing"
+        "testing",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4679,7 +5517,26 @@
         "report",
         "into",
         "failing",
-        "test"
+        "test",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4731,7 +5588,26 @@
         "test",
         "cases",
         "testing",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4783,7 +5659,26 @@
         "tests",
         "testing",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4835,7 +5730,19 @@
         "tests",
         "testing",
         "mobile",
-        "developer"
+        "developer",
+        "android",
+        "ios",
+        "kotlin",
+        "swift",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4887,7 +5794,19 @@
         "tests",
         "testing",
         "mobile",
-        "developer"
+        "developer",
+        "android",
+        "ios",
+        "kotlin",
+        "swift",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4939,7 +5858,19 @@
         "tests",
         "testing",
         "mobile",
-        "developer"
+        "developer",
+        "android",
+        "ios",
+        "kotlin",
+        "swift",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -4991,7 +5922,19 @@
         "based",
         "tests",
         "testing",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5043,7 +5986,19 @@
         "and",
         "stubs",
         "testing",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5095,7 +6050,20 @@
         "and",
         "synthetic",
         "data",
-        "testing"
+        "testing",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5147,7 +6115,20 @@
         "report",
         "into",
         "failing",
-        "test"
+        "test",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5199,7 +6180,19 @@
         "test",
         "cases",
         "testing",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5251,7 +6244,19 @@
         "tests",
         "testing",
         "mobile",
-        "developer"
+        "developer",
+        "android",
+        "ios",
+        "kotlin",
+        "swift",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5301,7 +6306,15 @@
         "unit",
         "tests",
         "testing",
-        "engineer"
+        "engineer",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5351,7 +6364,15 @@
         "integration",
         "tests",
         "testing",
-        "engineer"
+        "engineer",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5401,7 +6422,15 @@
         "contract",
         "tests",
         "testing",
-        "engineer"
+        "engineer",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5452,7 +6481,15 @@
         "based",
         "tests",
         "testing",
-        "engineer"
+        "engineer",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5503,7 +6540,15 @@
         "and",
         "stubs",
         "testing",
-        "engineer"
+        "engineer",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5554,7 +6599,15 @@
         "and",
         "synthetic",
         "data",
-        "testing"
+        "testing",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5605,7 +6658,15 @@
         "report",
         "into",
         "failing",
-        "test"
+        "test",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5656,7 +6717,15 @@
         "test",
         "cases",
         "testing",
-        "engineer"
+        "engineer",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5706,7 +6775,15 @@
         "brittle",
         "tests",
         "testing",
-        "engineer"
+        "engineer",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -5758,7 +6835,31 @@
         "tests",
         "testing",
         "data",
-        "engineer"
+        "engineer",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -5810,7 +6911,31 @@
         "tests",
         "testing",
         "data",
-        "engineer"
+        "engineer",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -5862,7 +6987,31 @@
         "tests",
         "testing",
         "data",
-        "engineer"
+        "engineer",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -5914,7 +7063,31 @@
         "based",
         "tests",
         "testing",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -5966,7 +7139,31 @@
         "and",
         "stubs",
         "testing",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -6018,7 +7215,31 @@
         "and",
         "synthetic",
         "data",
-        "testing"
+        "testing",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -6070,7 +7291,31 @@
         "report",
         "into",
         "failing",
-        "test"
+        "test",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -6122,7 +7367,31 @@
         "test",
         "cases",
         "testing",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -6174,7 +7443,31 @@
         "tests",
         "testing",
         "data",
-        "engineer"
+        "engineer",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -6197,7 +7490,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -6224,7 +7518,21 @@
         "unit",
         "tests",
         "testing",
-        "engineer"
+        "engineer",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -6247,7 +7555,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -6274,7 +7583,21 @@
         "integration",
         "tests",
         "testing",
-        "engineer"
+        "engineer",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -6297,7 +7620,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -6324,7 +7648,21 @@
         "contract",
         "tests",
         "testing",
-        "engineer"
+        "engineer",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -6347,7 +7685,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -6375,7 +7714,21 @@
         "based",
         "tests",
         "testing",
-        "engineer"
+        "engineer",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -6398,7 +7751,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -6426,7 +7780,21 @@
         "and",
         "stubs",
         "testing",
-        "engineer"
+        "engineer",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -6449,7 +7817,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -6477,7 +7846,21 @@
         "and",
         "synthetic",
         "data",
-        "testing"
+        "testing",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -6500,7 +7883,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -6528,7 +7912,21 @@
         "report",
         "into",
         "failing",
-        "test"
+        "test",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -6551,7 +7949,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -6579,7 +7978,21 @@
         "test",
         "cases",
         "testing",
-        "engineer"
+        "engineer",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -6602,7 +8015,8 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "R"
       ],
       "risk_level": "low",
       "verification": [
@@ -6629,7 +8043,21 @@
         "brittle",
         "tests",
         "testing",
-        "engineer"
+        "engineer",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -6682,7 +8110,12 @@
         "trace",
         "and",
         "root",
-        "cause"
+        "cause",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -6735,7 +8168,12 @@
         "via",
         "code",
         "reasoning",
-        "debugging"
+        "debugging",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -6788,7 +8226,12 @@
         "fix",
         "with",
         "rationale",
-        "debugging"
+        "debugging",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -6841,7 +8284,12 @@
         "catch",
         "regression",
         "debugging",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -6894,7 +8342,12 @@
         "around",
         "error",
         "debugging",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -6946,7 +8399,18 @@
         "trace",
         "and",
         "root",
-        "cause"
+        "cause",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -6998,7 +8462,18 @@
         "via",
         "code",
         "reasoning",
-        "debugging"
+        "debugging",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -7050,7 +8525,18 @@
         "fix",
         "with",
         "rationale",
-        "debugging"
+        "debugging",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -7102,7 +8588,18 @@
         "catch",
         "regression",
         "debugging",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -7154,7 +8651,18 @@
         "around",
         "error",
         "debugging",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -7206,7 +8714,12 @@
         "trace",
         "and",
         "root",
-        "cause"
+        "cause",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -7258,7 +8771,12 @@
         "via",
         "code",
         "reasoning",
-        "debugging"
+        "debugging",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -7310,7 +8828,12 @@
         "fix",
         "with",
         "rationale",
-        "debugging"
+        "debugging",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -7362,7 +8885,11 @@
         "catch",
         "regression",
         "debugging",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -7414,7 +8941,11 @@
         "around",
         "error",
         "debugging",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -7465,7 +8996,15 @@
         "trace",
         "and",
         "root",
-        "cause"
+        "cause",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -7516,7 +9055,15 @@
         "via",
         "code",
         "reasoning",
-        "debugging"
+        "debugging",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -7567,7 +9114,15 @@
         "fix",
         "with",
         "rationale",
-        "debugging"
+        "debugging",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -7618,7 +9173,15 @@
         "catch",
         "regression",
         "debugging",
-        "engineer"
+        "engineer",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -7669,7 +9232,15 @@
         "around",
         "error",
         "debugging",
-        "engineer"
+        "engineer",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -7722,7 +9293,12 @@
         "across",
         "repository",
         "refactoring",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -7775,7 +9351,12 @@
         "and",
         "update",
         "call",
-        "sites"
+        "sites",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -7828,7 +9409,12 @@
         "file",
         "refactoring",
         "frontend",
-        "developer"
+        "developer",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -7881,7 +9467,12 @@
         "code",
         "safely",
         "refactoring",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -7934,7 +9525,12 @@
         "and",
         "adapters",
         "refactoring",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -7987,7 +9583,12 @@
         "async",
         "refactoring",
         "frontend",
-        "developer"
+        "developer",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -8040,7 +9641,12 @@
         "util",
         "with",
         "library",
-        "refactoring"
+        "refactoring",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -8092,7 +9698,18 @@
         "across",
         "repository",
         "refactoring",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -8144,7 +9761,18 @@
         "and",
         "update",
         "call",
-        "sites"
+        "sites",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -8196,7 +9824,18 @@
         "file",
         "refactoring",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -8248,7 +9887,18 @@
         "code",
         "safely",
         "refactoring",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -8300,7 +9950,18 @@
         "and",
         "adapters",
         "refactoring",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -8352,7 +10013,18 @@
         "async",
         "refactoring",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -8404,7 +10076,18 @@
         "util",
         "with",
         "library",
-        "refactoring"
+        "refactoring",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -8456,7 +10139,11 @@
         "across",
         "repository",
         "refactoring",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -8508,7 +10195,12 @@
         "and",
         "update",
         "call",
-        "sites"
+        "sites",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -8560,7 +10252,11 @@
         "file",
         "refactoring",
         "mobile",
-        "developer"
+        "developer",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -8612,7 +10308,11 @@
         "code",
         "safely",
         "refactoring",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -8664,7 +10364,11 @@
         "and",
         "adapters",
         "refactoring",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -8716,7 +10420,11 @@
         "async",
         "refactoring",
         "mobile",
-        "developer"
+        "developer",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -8768,7 +10476,12 @@
         "util",
         "with",
         "library",
-        "refactoring"
+        "refactoring",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -8820,7 +10533,23 @@
         "across",
         "repository",
         "refactoring",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -8872,7 +10601,23 @@
         "and",
         "update",
         "call",
-        "sites"
+        "sites",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -8924,7 +10669,23 @@
         "file",
         "refactoring",
         "data",
-        "engineer"
+        "engineer",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -8976,7 +10737,23 @@
         "code",
         "safely",
         "refactoring",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -9028,7 +10805,23 @@
         "and",
         "adapters",
         "refactoring",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -9080,7 +10873,23 @@
         "async",
         "refactoring",
         "data",
-        "engineer"
+        "engineer",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -9132,7 +10941,23 @@
         "util",
         "with",
         "library",
-        "refactoring"
+        "refactoring",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -9182,7 +11007,12 @@
         "from",
         "signatures",
         "documentation",
-        "technical"
+        "technical",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9232,7 +11062,11 @@
         "purpose",
         "readme",
         "section",
-        "documentation"
+        "documentation",
+        "markdown",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9282,7 +11116,12 @@
         "level",
         "architecture",
         "overview",
-        "documentation"
+        "documentation",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9332,7 +11171,12 @@
         "from",
         "design",
         "notes",
-        "documentation"
+        "documentation",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9382,7 +11226,12 @@
         "from",
         "commits",
         "documentation",
-        "technical"
+        "technical",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9432,7 +11281,17 @@
         "public",
         "api",
         "documentation",
-        "technical"
+        "technical",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman",
+        "markdown",
+        "readme",
+        "api-docs",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9485,7 +11344,23 @@
         "from",
         "signatures",
         "documentation",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9538,7 +11413,22 @@
         "purpose",
         "readme",
         "section",
-        "documentation"
+        "documentation",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "markdown",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9591,7 +11481,23 @@
         "level",
         "architecture",
         "overview",
-        "documentation"
+        "documentation",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9644,7 +11550,23 @@
         "from",
         "design",
         "notes",
-        "documentation"
+        "documentation",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9697,7 +11619,23 @@
         "from",
         "commits",
         "documentation",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9750,7 +11688,28 @@
         "public",
         "api",
         "documentation",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman",
+        "markdown",
+        "readme",
+        "api-docs",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9804,7 +11763,17 @@
         "from",
         "signatures",
         "documentation",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9858,7 +11827,16 @@
         "purpose",
         "readme",
         "section",
-        "documentation"
+        "documentation",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "markdown",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9912,7 +11890,17 @@
         "level",
         "architecture",
         "overview",
-        "documentation"
+        "documentation",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -9966,7 +11954,17 @@
         "from",
         "design",
         "notes",
-        "documentation"
+        "documentation",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -10020,7 +12018,17 @@
         "from",
         "commits",
         "documentation",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -10074,7 +12082,22 @@
         "public",
         "api",
         "documentation",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman",
+        "markdown",
+        "readme",
+        "api-docs",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -10128,7 +12151,18 @@
         "pull",
         "requests",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -10182,7 +12216,18 @@
         "areas",
         "and",
         "edge",
-        "cases"
+        "cases",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -10236,7 +12281,18 @@
         "tests",
         "for",
         "pull",
-        "requests"
+        "requests",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -10290,7 +12346,18 @@
         "and",
         "checklist",
         "pull",
-        "requests"
+        "requests",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -10344,7 +12411,18 @@
         "notes",
         "from",
         "merged",
-        "prs"
+        "prs",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -10398,7 +12476,18 @@
         "based",
         "code",
         "changes",
-        "pull"
+        "pull",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -10453,7 +12542,12 @@
         "pull",
         "requests",
         "frontend",
-        "developer"
+        "developer",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -10508,7 +12602,12 @@
         "areas",
         "and",
         "edge",
-        "cases"
+        "cases",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -10563,7 +12662,12 @@
         "tests",
         "for",
         "pull",
-        "requests"
+        "requests",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -10618,7 +12722,12 @@
         "and",
         "checklist",
         "pull",
-        "requests"
+        "requests",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -10673,7 +12782,12 @@
         "notes",
         "from",
         "merged",
-        "prs"
+        "prs",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -10728,7 +12842,12 @@
         "based",
         "code",
         "changes",
-        "pull"
+        "pull",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -10780,7 +12899,15 @@
         "changes",
         "pull",
         "requests",
-        "engineer"
+        "engineer",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -10833,7 +12960,15 @@
         "areas",
         "and",
         "edge",
-        "cases"
+        "cases",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -10886,7 +13021,15 @@
         "tests",
         "for",
         "pull",
-        "requests"
+        "requests",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -10939,7 +13082,15 @@
         "and",
         "checklist",
         "pull",
-        "requests"
+        "requests",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -10992,7 +13143,15 @@
         "notes",
         "from",
         "merged",
-        "prs"
+        "prs",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -11045,7 +13204,15 @@
         "based",
         "code",
         "changes",
-        "pull"
+        "pull",
+        "jest",
+        "pytest",
+        "junit",
+        "selenium",
+        "cypress",
+        "playwright",
+        "mocha",
+        "testing-library"
       ],
       "legacy": {}
     },
@@ -11402,7 +13569,18 @@
         "behavior",
         "originates",
         "knowledge",
-        "repo"
+        "repo",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -11453,7 +13631,18 @@
         "flow",
         "across",
         "layers",
-        "knowledge"
+        "knowledge",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -11504,7 +13693,18 @@
         "flags",
         "and",
         "usage",
-        "knowledge"
+        "knowledge",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -11555,7 +13755,18 @@
         "implementations",
         "knowledge",
         "repo",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -11606,7 +13817,18 @@
         "related",
         "feature",
         "knowledge",
-        "repo"
+        "repo",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -11658,7 +13880,12 @@
         "behavior",
         "originates",
         "knowledge",
-        "repo"
+        "repo",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -11710,7 +13937,12 @@
         "flow",
         "across",
         "layers",
-        "knowledge"
+        "knowledge",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -11762,7 +13994,12 @@
         "flags",
         "and",
         "usage",
-        "knowledge"
+        "knowledge",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -11814,7 +14051,12 @@
         "implementations",
         "knowledge",
         "repo",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -11866,7 +14108,12 @@
         "related",
         "feature",
         "knowledge",
-        "repo"
+        "repo",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -11916,7 +14163,21 @@
         "behavior",
         "originates",
         "knowledge",
-        "repo"
+        "repo",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -11966,7 +14227,21 @@
         "flow",
         "across",
         "layers",
-        "knowledge"
+        "knowledge",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -12016,7 +14291,21 @@
         "flags",
         "and",
         "usage",
-        "knowledge"
+        "knowledge",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -12066,7 +14355,21 @@
         "implementations",
         "knowledge",
         "repo",
-        "devops"
+        "devops",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -12116,7 +14419,21 @@
         "related",
         "feature",
         "knowledge",
-        "repo"
+        "repo",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -12409,7 +14726,18 @@
         "into",
         "tasks",
         "planning",
-        "delivery"
+        "delivery",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -12462,7 +14790,18 @@
         "fix",
         "tests",
         "planning",
-        "delivery"
+        "delivery",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -12515,7 +14854,18 @@
         "with",
         "tests",
         "and",
-        "planning"
+        "planning",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -12568,7 +14918,18 @@
         "and",
         "link",
         "adr",
-        "planning"
+        "planning",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -12621,7 +14982,18 @@
         "branch",
         "plan",
         "planning",
-        "delivery"
+        "delivery",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -12675,7 +15047,12 @@
         "into",
         "tasks",
         "planning",
-        "delivery"
+        "delivery",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -12729,7 +15106,12 @@
         "fix",
         "tests",
         "planning",
-        "delivery"
+        "delivery",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -12783,7 +15165,12 @@
         "with",
         "tests",
         "and",
-        "planning"
+        "planning",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -12837,7 +15224,12 @@
         "and",
         "link",
         "adr",
-        "planning"
+        "planning",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -12891,7 +15283,12 @@
         "branch",
         "plan",
         "planning",
-        "delivery"
+        "delivery",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -13196,7 +15593,21 @@
         "actions",
         "workflow",
         "devops",
-        "engineer"
+        "engineer",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13251,7 +15662,21 @@
         "fix",
         "failure",
         "devops",
-        "engineer"
+        "engineer",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13306,7 +15731,21 @@
         "with",
         "multi",
         "stage",
-        "build"
+        "build",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13360,7 +15799,21 @@
         "build",
         "caching",
         "devops",
-        "engineer"
+        "engineer",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13415,7 +15868,24 @@
         "deployment",
         "workflow",
         "devops",
-        "engineer"
+        "engineer",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm",
+        "cloud",
+        "serverless",
+        "lambda"
       ],
       "legacy": {}
     },
@@ -13469,7 +15939,21 @@
         "rollback",
         "plan",
         "devops",
-        "engineer"
+        "engineer",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13524,7 +16008,21 @@
         "actions",
         "workflow",
         "devops",
-        "sre"
+        "sre",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13579,7 +16077,21 @@
         "fix",
         "failure",
         "devops",
-        "sre"
+        "sre",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13634,7 +16146,21 @@
         "with",
         "multi",
         "stage",
-        "build"
+        "build",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13688,7 +16214,21 @@
         "build",
         "caching",
         "devops",
-        "sre"
+        "sre",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13743,7 +16283,24 @@
         "deployment",
         "workflow",
         "devops",
-        "sre"
+        "sre",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm",
+        "cloud",
+        "serverless",
+        "lambda"
       ],
       "legacy": {}
     },
@@ -13797,7 +16354,21 @@
         "rollback",
         "plan",
         "devops",
-        "sre"
+        "sre",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13853,7 +16424,32 @@
         "actions",
         "workflow",
         "devops",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13909,7 +16505,32 @@
         "fix",
         "failure",
         "devops",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -13965,7 +16586,32 @@
         "with",
         "multi",
         "stage",
-        "build"
+        "build",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14021,7 +16667,32 @@
         "caching",
         "devops",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14077,7 +16748,35 @@
         "deployment",
         "workflow",
         "devops",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm",
+        "cloud",
+        "serverless",
+        "lambda"
       ],
       "legacy": {}
     },
@@ -14133,7 +16832,32 @@
         "plan",
         "devops",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14185,7 +16909,21 @@
         "from",
         "logs",
         "sre",
-        "operations"
+        "operations",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14237,7 +16975,21 @@
         "and",
         "dashboards",
         "sre",
-        "operations"
+        "operations",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14288,7 +17040,21 @@
         "runbook",
         "checklist",
         "sre",
-        "operations"
+        "operations",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14340,7 +17106,21 @@
         "radius",
         "from",
         "errors",
-        "sre"
+        "sre",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14391,7 +17171,21 @@
         "postmortem",
         "outline",
         "sre",
-        "operations"
+        "operations",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14443,7 +17237,21 @@
         "from",
         "logs",
         "sre",
-        "operations"
+        "operations",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14495,7 +17303,21 @@
         "and",
         "dashboards",
         "sre",
-        "operations"
+        "operations",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14547,7 +17369,21 @@
         "checklist",
         "sre",
         "operations",
-        "devops"
+        "devops",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14599,7 +17435,21 @@
         "radius",
         "from",
         "errors",
-        "sre"
+        "sre",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14651,7 +17501,21 @@
         "outline",
         "sre",
         "operations",
-        "devops"
+        "devops",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -14702,7 +17566,13 @@
         "finding",
         "with",
         "minimal",
-        "diff"
+        "diff",
+        "oauth",
+        "jwt",
+        "auth0",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -14753,7 +17623,14 @@
         "exposure",
         "and",
         "rotate",
-        "keys"
+        "keys",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -14804,7 +17681,14 @@
         "headers",
         "and",
         "csp",
-        "security"
+        "security",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -14855,7 +17739,14 @@
         "misconfig",
         "k8s",
         "security",
-        "compliance"
+        "compliance",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -14906,7 +17797,14 @@
         "and",
         "triage",
         "risks",
-        "security"
+        "security",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -14957,7 +17855,14 @@
         "test",
         "for",
         "previous",
-        "vuln"
+        "vuln",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15010,7 +17915,27 @@
         "finding",
         "with",
         "minimal",
-        "diff"
+        "diff",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm",
+        "oauth",
+        "jwt",
+        "auth0",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15063,7 +17988,28 @@
         "exposure",
         "and",
         "rotate",
-        "keys"
+        "keys",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15116,7 +18062,28 @@
         "headers",
         "and",
         "csp",
-        "security"
+        "security",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15169,7 +18136,27 @@
         "misconfig",
         "k8s",
         "security",
-        "compliance"
+        "compliance",
+        "docker",
+        "kubernetes",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15222,7 +18209,28 @@
         "and",
         "triage",
         "risks",
-        "security"
+        "security",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15275,7 +18283,28 @@
         "test",
         "for",
         "previous",
-        "vuln"
+        "vuln",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15329,7 +18358,24 @@
         "finding",
         "with",
         "minimal",
-        "diff"
+        "diff",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "oauth",
+        "jwt",
+        "auth0",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15383,7 +18429,25 @@
         "exposure",
         "and",
         "rotate",
-        "keys"
+        "keys",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15437,7 +18501,25 @@
         "headers",
         "and",
         "csp",
-        "security"
+        "security",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15491,7 +18573,25 @@
         "misconfig",
         "k8s",
         "security",
-        "compliance"
+        "compliance",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15545,7 +18645,25 @@
         "and",
         "triage",
         "risks",
-        "security"
+        "security",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15599,7 +18717,25 @@
         "test",
         "for",
         "previous",
-        "vuln"
+        "vuln",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "oauth",
+        "jwt",
+        "auth0",
+        "sast",
+        "vulnerability",
+        "penetration-testing",
+        "encryption"
       ],
       "legacy": {}
     },
@@ -15654,7 +18790,22 @@
         "query",
         "plan",
         "data",
-        "engineering"
+        "engineering",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -15709,7 +18860,22 @@
         "model",
         "with",
         "tests",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -15764,7 +18930,23 @@
         "quality",
         "rules",
         "engineering",
-        "analytics"
+        "analytics",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -15819,7 +19001,21 @@
         "spark",
         "pipeline",
         "data",
-        "engineering"
+        "engineering",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "airflow",
+        "dbt",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -15874,7 +19070,23 @@
         "regression",
         "data",
         "engineering",
-        "analytics"
+        "analytics",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -15898,7 +19110,9 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "SQL",
+        "R"
       ],
       "risk_level": "medium",
       "verification": [
@@ -15927,7 +19141,29 @@
         "cell",
         "output",
         "data",
-        "science"
+        "science",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -15951,7 +19187,9 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "SQL",
+        "R"
       ],
       "risk_level": "medium",
       "verification": [
@@ -15980,7 +19218,28 @@
         "operations",
         "data",
         "science",
-        "engineer"
+        "engineer",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "numpy",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -16004,7 +19263,9 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "SQL",
+        "R"
       ],
       "risk_level": "medium",
       "verification": [
@@ -16033,7 +19294,29 @@
         "loop",
         "with",
         "early",
-        "stopping"
+        "stopping",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -16057,7 +19340,9 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "SQL",
+        "R"
       ],
       "risk_level": "medium",
       "verification": [
@@ -16086,7 +19371,29 @@
         "logging",
         "data",
         "science",
-        "engineer"
+        "engineer",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -16110,7 +19417,9 @@
       "languages": [
         "Python",
         "PyTorch",
-        "TensorFlow"
+        "TensorFlow",
+        "SQL",
+        "R"
       ],
       "risk_level": "medium",
       "verification": [
@@ -16139,7 +19448,29 @@
         "script",
         "package",
         "data",
-        "science"
+        "science",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -16164,7 +19495,8 @@
         "SQL",
         "Python",
         "Scala",
-        "Spark"
+        "Spark",
+        "R"
       ],
       "risk_level": "medium",
       "verification": [
@@ -16193,7 +19525,29 @@
         "cell",
         "output",
         "data",
-        "science"
+        "science",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -16218,7 +19572,8 @@
         "SQL",
         "Python",
         "Scala",
-        "Spark"
+        "Spark",
+        "R"
       ],
       "risk_level": "medium",
       "verification": [
@@ -16247,7 +19602,28 @@
         "operations",
         "data",
         "science",
-        "engineer"
+        "engineer",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "numpy",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -16272,7 +19648,8 @@
         "SQL",
         "Python",
         "Scala",
-        "Spark"
+        "Spark",
+        "R"
       ],
       "risk_level": "medium",
       "verification": [
@@ -16301,7 +19678,29 @@
         "loop",
         "with",
         "early",
-        "stopping"
+        "stopping",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -16326,7 +19725,8 @@
         "SQL",
         "Python",
         "Scala",
-        "Spark"
+        "Spark",
+        "R"
       ],
       "risk_level": "medium",
       "verification": [
@@ -16355,7 +19755,29 @@
         "logging",
         "data",
         "science",
-        "engineer"
+        "engineer",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -16380,7 +19802,8 @@
         "SQL",
         "Python",
         "Scala",
-        "Spark"
+        "Spark",
+        "R"
       ],
       "risk_level": "medium",
       "verification": [
@@ -16409,7 +19832,29 @@
         "script",
         "package",
         "data",
-        "science"
+        "science",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "pytorch",
+        "tensorflow",
+        "scikit-learn",
+        "jupyter",
+        "keras",
+        "mlflow",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -16462,7 +19907,23 @@
         "endpoints",
         "from",
         "schema",
-        "api"
+        "api",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -16515,7 +19976,24 @@
         "response",
         "validators",
         "api",
-        "development"
+        "development",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -16568,7 +20046,24 @@
         "and",
         "filtering",
         "api",
-        "development"
+        "development",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -16621,7 +20116,24 @@
         "tests",
         "for",
         "api",
-        "development"
+        "development",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -16674,7 +20186,24 @@
         "sdk",
         "scaffolding",
         "api",
-        "development"
+        "development",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -16728,7 +20257,17 @@
         "endpoints",
         "from",
         "schema",
-        "api"
+        "api",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -16782,7 +20321,18 @@
         "response",
         "validators",
         "api",
-        "development"
+        "development",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -16836,7 +20386,18 @@
         "and",
         "filtering",
         "api",
-        "development"
+        "development",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -16890,7 +20451,18 @@
         "tests",
         "for",
         "api",
-        "development"
+        "development",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -16944,7 +20516,18 @@
         "sdk",
         "scaffolding",
         "api",
-        "development"
+        "development",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman"
       ],
       "legacy": {}
     },
@@ -16998,7 +20581,11 @@
         "component",
         "with",
         "props",
-        "frontend"
+        "frontend",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -17052,7 +20639,12 @@
         "attributes",
         "aria",
         "frontend",
-        "development"
+        "development",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -17106,7 +20698,12 @@
         "e2e",
         "flow",
         "frontend",
-        "development"
+        "development",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -17160,7 +20757,12 @@
         "into",
         "hook",
         "frontend",
-        "development"
+        "development",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -17214,7 +20816,12 @@
         "tailwind",
         "utility",
         "classes",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -17267,7 +20874,18 @@
         "pattern",
         "backend",
         "development",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -17320,7 +20938,18 @@
         "with",
         "invalidation",
         "backend",
-        "development"
+        "development",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -17373,7 +21002,18 @@
         "handlers",
         "backend",
         "development",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -17426,7 +21066,18 @@
         "with",
         "backoff",
         "backend",
-        "development"
+        "development",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -17479,7 +21130,18 @@
         "entities",
         "safely",
         "backend",
-        "development"
+        "development",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -17532,7 +21194,10 @@
         "kotlin",
         "screen",
         "mobile",
-        "development"
+        "development",
+        "android",
+        "ios",
+        "swift"
       ],
       "legacy": {}
     },
@@ -17585,7 +21250,18 @@
         "client",
         "with",
         "offline",
-        "cache"
+        "cache",
+        "rest",
+        "graphql",
+        "grpc",
+        "openapi",
+        "swagger",
+        "postman",
+        "android",
+        "ios",
+        "mobile",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -17638,7 +21314,11 @@
         "tests",
         "mobile",
         "development",
-        "developer"
+        "developer",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -17691,7 +21371,11 @@
         "links",
         "and",
         "navigation",
-        "mobile"
+        "mobile",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -17744,7 +21428,11 @@
         "for",
         "performance",
         "mobile",
-        "development"
+        "development",
+        "android",
+        "ios",
+        "kotlin",
+        "swift"
       ],
       "legacy": {}
     },
@@ -17797,7 +21485,21 @@
         "notes",
         "build",
         "devops",
-        "engineer"
+        "engineer",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -17850,7 +21552,21 @@
         "consistently",
         "build",
         "release",
-        "devops"
+        "devops",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -17903,7 +21619,21 @@
         "and",
         "verify",
         "build",
-        "release"
+        "release",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -17956,7 +21686,21 @@
         "from",
         "commits",
         "build",
-        "release"
+        "release",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -18009,7 +21753,21 @@
         "versioning",
         "build",
         "release",
-        "devops"
+        "devops",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -18063,7 +21821,18 @@
         "notes",
         "build",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -18117,7 +21886,18 @@
         "consistently",
         "build",
         "release",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -18171,7 +21951,18 @@
         "and",
         "verify",
         "build",
-        "release"
+        "release",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -18225,7 +22016,18 @@
         "from",
         "commits",
         "build",
-        "release"
+        "release",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -18279,7 +22081,18 @@
         "versioning",
         "build",
         "release",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -18334,7 +22147,12 @@
         "notes",
         "build",
         "frontend",
-        "developer"
+        "developer",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -18389,7 +22207,12 @@
         "consistently",
         "build",
         "release",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -18444,7 +22267,12 @@
         "and",
         "verify",
         "build",
-        "release"
+        "release",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -18499,7 +22327,12 @@
         "from",
         "commits",
         "build",
-        "release"
+        "release",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -18554,7 +22387,12 @@
         "versioning",
         "build",
         "release",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -18606,7 +22444,18 @@
         "types",
         "migration",
         "conversion",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -18658,7 +22507,18 @@
         "major",
         "version",
         "migration",
-        "conversion"
+        "conversion",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -18710,7 +22570,18 @@
         "grpc",
         "migration",
         "conversion",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -18762,7 +22633,18 @@
         "with",
         "parity",
         "migration",
-        "conversion"
+        "conversion",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -18814,7 +22696,18 @@
         "python",
         "rust",
         "migration",
-        "conversion"
+        "conversion",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -18867,7 +22760,12 @@
         "types",
         "migration",
         "conversion",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -18920,7 +22818,12 @@
         "major",
         "version",
         "migration",
-        "conversion"
+        "conversion",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -18973,7 +22876,12 @@
         "grpc",
         "migration",
         "conversion",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -19026,7 +22934,12 @@
         "with",
         "parity",
         "migration",
-        "conversion"
+        "conversion",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -19079,7 +22992,12 @@
         "python",
         "rust",
         "migration",
-        "conversion"
+        "conversion",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -19131,7 +23049,23 @@
         "types",
         "migration",
         "conversion",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -19183,7 +23117,23 @@
         "major",
         "version",
         "migration",
-        "conversion"
+        "conversion",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -19235,7 +23185,23 @@
         "grpc",
         "migration",
         "conversion",
-        "data"
+        "data",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -19287,7 +23253,23 @@
         "with",
         "parity",
         "migration",
-        "conversion"
+        "conversion",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -19339,7 +23321,23 @@
         "python",
         "rust",
         "migration",
-        "conversion"
+        "conversion",
+        "sql",
+        "postgresql",
+        "mysql",
+        "mongodb",
+        "redis",
+        "spark",
+        "airflow",
+        "dbt",
+        "etl",
+        "pandas",
+        "numpy",
+        "sqlite",
+        "oracle",
+        "sql-server",
+        "database",
+        "query-optimization"
       ],
       "legacy": {}
     },
@@ -19391,7 +23389,18 @@
         "config",
         "schema",
         "configuration",
-        "management"
+        "management",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -19443,7 +23452,18 @@
         "and",
         "secrets",
         "mapping",
-        "configuration"
+        "configuration",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -19495,7 +23515,18 @@
         "config",
         "per",
         "env",
-        "configuration"
+        "configuration",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -19547,7 +23578,18 @@
         "configuration",
         "management",
         "backend",
-        "developer"
+        "developer",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -19598,7 +23640,21 @@
         "config",
         "schema",
         "configuration",
-        "management"
+        "management",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -19649,7 +23705,21 @@
         "and",
         "secrets",
         "mapping",
-        "configuration"
+        "configuration",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -19700,7 +23770,21 @@
         "config",
         "per",
         "env",
-        "configuration"
+        "configuration",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -19751,7 +23835,21 @@
         "configuration",
         "management",
         "devops",
-        "engineer"
+        "engineer",
+        "docker",
+        "kubernetes",
+        "k8s",
+        "terraform",
+        "ansible",
+        "jenkins",
+        "github-actions",
+        "ci-cd",
+        "aws",
+        "azure",
+        "gcp",
+        "prometheus",
+        "grafana",
+        "helm"
       ],
       "legacy": {}
     },
@@ -19805,7 +23903,12 @@
         "i18n",
         "catalog",
         "localization",
-        "internationalization"
+        "internationalization",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -19859,7 +23962,12 @@
         "message",
         "formats",
         "localization",
-        "internationalization"
+        "internationalization",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -19913,7 +24021,12 @@
         "ltr",
         "layouts",
         "localization",
-        "internationalization"
+        "internationalization",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -19967,7 +24080,12 @@
         "coded",
         "locale",
         "assumptions",
-        "localization"
+        "localization",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -20019,7 +24137,12 @@
         "labels",
         "and",
         "roles",
-        "accessibility"
+        "accessibility",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -20071,7 +24194,12 @@
         "and",
         "focus",
         "order",
-        "accessibility"
+        "accessibility",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -20123,7 +24251,12 @@
         "navigation",
         "tests",
         "accessibility",
-        "frontend"
+        "frontend",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -20175,7 +24308,12 @@
         "with",
         "alt",
         "text",
-        "accessibility"
+        "accessibility",
+        "react",
+        "vue",
+        "angular",
+        "next.js",
+        "svelte"
       ],
       "legacy": {}
     },
@@ -20425,7 +24563,12 @@
         "thread",
         "communication",
         "collaboration",
-        "technical"
+        "technical",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -20475,7 +24618,12 @@
         "discussion",
         "comment",
         "communication",
-        "collaboration"
+        "collaboration",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -20525,7 +24673,12 @@
         "scope",
         "from",
         "prs",
-        "communication"
+        "communication",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -20575,7 +24728,12 @@
         "notes",
         "into",
         "tasks",
-        "communication"
+        "communication",
+        "markdown",
+        "readme",
+        "api-docs",
+        "swagger",
+        "docusaurus"
       ],
       "legacy": {}
     },
@@ -20628,7 +24786,18 @@
         "thread",
         "communication",
         "collaboration",
-        "backend"
+        "backend",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -20681,7 +24850,18 @@
         "discussion",
         "comment",
         "communication",
-        "collaboration"
+        "collaboration",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -20734,7 +24914,18 @@
         "scope",
         "from",
         "prs",
-        "communication"
+        "communication",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     },
@@ -20787,7 +24978,18 @@
         "notes",
         "into",
         "tasks",
-        "communication"
+        "communication",
+        "spring",
+        "django",
+        "flask",
+        "express",
+        "rails",
+        "asp.net",
+        "fastapi",
+        "postgresql",
+        "mongodb",
+        "redis",
+        "mysql"
       ],
       "legacy": {}
     }

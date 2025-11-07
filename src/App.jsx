@@ -30,6 +30,8 @@ function App() {
   const [showFilters, setShowFilters] = useState(false)
 
   const searchInputRef = useRef(null)
+  const lastSearchedQueryRef = useRef('')
+  const lastSearchedFiltersRef = useRef({})
 
   // Load use cases data
   useEffect(() => {
@@ -60,6 +62,8 @@ function App() {
     if (!searchQuery.trim() && Object.keys(filters).length === 0) {
       setSearchResults([])
       setIsSearching(false)
+      lastSearchedQueryRef.current = ''
+      lastSearchedFiltersRef.current = {}
       return
     }
 
@@ -71,10 +75,17 @@ function App() {
       addToSearchHistory(searchQuery)
     }
 
-    // Perform search
-    const results = performSearch(useCases, searchQuery, filters, sortBy)
-    setSearchResults(results)
-    setIsSearching(false)
+    // Use setTimeout to defer search to next tick, preventing flash
+    setTimeout(() => {
+      // Perform search
+      const results = performSearch(useCases, searchQuery, filters, sortBy)
+      setSearchResults(results)
+      setIsSearching(false)
+
+      // Track what we just searched for
+      lastSearchedQueryRef.current = searchQuery
+      lastSearchedFiltersRef.current = filters
+    }, 0)
 
     // Update URL
     if (searchQuery) {
@@ -161,6 +172,9 @@ function App() {
 
   const hasResults = currentView === 'search' && searchResults.length > 0
   const hasQuery = searchQuery.trim().length > 0 || Object.keys(filters).length > 0
+  // Only show "no results" if we've completed the search for the current query
+  const searchCompleted = lastSearchedQueryRef.current === searchQuery &&
+    JSON.stringify(lastSearchedFiltersRef.current) === JSON.stringify(filters)
   const favoriteUseCases = getFavoriteUseCases()
 
   return (
@@ -370,7 +384,7 @@ function App() {
             )}
 
             {/* No Results */}
-            {hasQuery && !hasResults && !isLoading && !isSearching && (
+            {hasQuery && !hasResults && !isLoading && !isSearching && searchCompleted && (
               <div className="no-results">
                 <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
                   <circle cx="60" cy="60" r="50" stroke="currentColor" strokeWidth="2" opacity="0.2"/>

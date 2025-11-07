@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npm run build:*)"
+      "Bash(npm run build:*)",
+      "Bash(python -c:*)",
+      "Bash(python update_keywords.py:*)"
     ],
     "deny": [],
     "ask": []
