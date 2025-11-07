@@ -12,7 +12,7 @@ import SearchBar from './components/SearchBar'
 import SearchResults from './components/SearchResults'
 import ThemeToggle from './components/ThemeToggle'
 import FilterPanel from './components/FilterPanel'
-import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -490,7 +490,7 @@ function App() {
             />
           </div>
         )}
-        <Analytics />
+      
       </div>
 
       {/* Filter Panel */}
